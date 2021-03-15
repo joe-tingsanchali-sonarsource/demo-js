@@ -1,0 +1,16 @@
+on: push
+name: Main Workflow
+jobs:
+  sonarQubeTrigger:
+    name: SonarQube Trigger
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: SonarQube Scan
+      uses: kitabisa/sonarqube-action@master
+      with:
+        host: http://ee87-jting-us.ngrok.io
+        login: e41b4e01e70ec33d9a134fc0249f1da57c1d47d5
+        projectBaseDir: "/path/to/my-custom-project"
+        projectKey: "demo-js"
+        projectName: "demo-js"
