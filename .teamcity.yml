@@ -5,12 +5,12 @@ jobs:
     steps:
       - type: script
         script-content: >-
-          export SONAR_SCANNER_VERSION="6.1.0.4477"
+          export SONAR_SCANNER_VERSION="5.0.1.3006"
 
           mkdir $HOME/.sonar
 
           curl -sSLo $HOME/.sonar/sonar-scanner.zip
-          https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux-x64.zip 
+          https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip 
 
           unzip -o $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
 
