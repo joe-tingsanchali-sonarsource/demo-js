@@ -5,7 +5,9 @@ jobs:
     steps:
       - type: script
         script-content: >-
-          curl -sSLo $HOME/.sonar/sonar-scanner.zip
+          export SONAR_SCANNER_VERSION="6.0.0.4432"
+
+          mkdir $HOME/.sonar curl -sSLo $HOME/.sonar/sonar-scanner.zip
           https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip 
 
           unzip -o $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
@@ -13,11 +15,11 @@ jobs:
           export
           PATH=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
 
-
-          sonar-scanner -Dsonar.host.url="${SONAR_HOST_URL}"
-          -Dsonar.token=$SONAR_TOKEN
+          sonar-scanner -Dsonar.host.url=%SONAR_HOST_URL%
+          -Dsonar.token=%SONAR_TOKEN%
           -Dsonar.projectKey=demo-js-teamcity-pipelines
     runs-on: Linux-Small
     checkout-working-directories-only: false
 secrets:
   SONAR_HOST_URL: credentialsJSON:faf8bcc4-1a75-4e6e-bc24-6417d6510484
+  SONAR_TOKEN: credentialsJSON:dc53e57e-1d25-4ea2-a4cc-ad2f309cd7ba
