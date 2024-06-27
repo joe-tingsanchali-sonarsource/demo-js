@@ -7,7 +7,9 @@ jobs:
         script-content: >-
           export SONAR_SCANNER_VERSION="6.0.0.4432"
 
-          mkdir $HOME/.sonar curl -sSLo $HOME/.sonar/sonar-scanner.zip
+          mkdir $HOME/.sonar
+
+          curl -sSLo $HOME/.sonar/sonar-scanner.zip
           https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip 
 
           unzip -o $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
