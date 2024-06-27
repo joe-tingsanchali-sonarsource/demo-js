@@ -5,7 +5,7 @@ jobs:
     steps:
       - type: script
         script-content: >-
-          export SONAR_SCANNER_VERSION="6.0.0.4432"
+          export SONAR_SCANNER_VERSION="5.0.1.3006"
 
           mkdir $HOME/.sonar
 
