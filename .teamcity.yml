@@ -19,7 +19,7 @@ jobs:
 
           sonar-scanner -Dsonar.host.url=%SONAR_HOST_URL%
           -Dsonar.token=%SONAR_TOKEN%
-          -Dsonar.projectKey=demo-js-teamcity-pipelines
+          -Dsonar.projectKey=demo-js-teamcity-pipelines -X
     runs-on: Ubuntu-22.04-Small
     checkout-working-directories-only: false
 secrets:
