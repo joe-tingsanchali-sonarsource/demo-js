@@ -23,5 +23,5 @@ jobs:
     runs-on: Ubuntu-22.04-Small
     checkout-working-directories-only: false
 secrets:
-  SONAR_HOST_URL: credentialsJSON:bee25d3c-ec03-4a45-a405-5a25b714b99f
-  SONAR_TOKEN: credentialsJSON:dc53e57e-1d25-4ea2-a4cc-ad2f309cd7ba
+  SONAR_HOST_URL: credentialsJSON:b1e8a4d5-4931-4e43-a551-ad6af09a0b8f
+  SONAR_TOKEN: credentialsJSON:95f6c2d7-1276-498d-a440-ca65e235b68c
