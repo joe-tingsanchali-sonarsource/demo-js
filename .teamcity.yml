@@ -17,6 +17,8 @@ jobs:
           export
           PATH=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
 
+          sleep 5d # Waits 5 days.
+
           sonar-scanner -Dsonar.host.url=%SONAR_HOST_URL%
           -Dsonar.login=%SONAR_LOGIN% -Dsonar.password=%SONAR_PASSWORD%
           -Dsonar.projectKey=demo-js-teamcity-pipelines -X
