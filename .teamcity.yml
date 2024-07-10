@@ -17,7 +17,7 @@ jobs:
           export
           PATH=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
 
-          sonar-scanner -Dsonar.host.url=%SONAR_HOST_URL%
+          sonar-scanner -Dsonar.host.url=%SONAR_HOST_URL2%
             -Dsonar.login=%SONAR_LOGIN%
             -Dsonar.password=%SONAR_PASSWORD%
             -Dsonar.projectKey=demo-js-teamcity-pipelines -X
