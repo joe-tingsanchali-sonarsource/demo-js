@@ -5,6 +5,14 @@ jobs:
     steps:
       - type: script
         script-content: >-
+          echo "----------"
+
+          ifconfig
+
+          echo "-----------"
+
+
+
           export SONAR_SCANNER_VERSION="5.0.1.3006"
 
           mkdir $HOME/.sonar
