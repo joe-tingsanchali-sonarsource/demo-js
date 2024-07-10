@@ -26,5 +26,3 @@ secrets:
   SONAR_HOST_URL: credentialsJSON:541cc69a-be2b-4b90-b397-801bede96862
   SONAR_LOGIN: credentialsJSON:0df651d5-eb5d-4372-9f20-fde6c492c5d6
   SONAR_PASSWORD: credentialsJSON:222e00ff-0552-47e2-ae63-be7e1efac3c9
-  SONAR_HOST_URL2: credentialsJSON:19484a94-1bd2-4ee7-959b-fd7ead257eaa
-  SONAR_HOST_URL3: credentialsJSON:1b7a9882-a3b7-4c5c-bd0b-cde09822e763
