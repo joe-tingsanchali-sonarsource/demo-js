@@ -18,8 +18,8 @@ jobs:
           PATH=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
 
           sonar-scanner -Dsonar.host.url=%SONAR_HOST_URL3%
-            -Dsonar.login=%SONAR_LOGIN%
-            -Dsonar.password=%SONAR_PASSWORD%
+            -Dsonar.login=admin
+            -Dsonar.password=aadmin
             -Dsonar.projectKey=demo-js-teamcity-pipelines -X
     runs-on: Ubuntu-22.04-Small
     checkout-working-directories-only: false
