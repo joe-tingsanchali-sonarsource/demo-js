@@ -1,3 +1,4 @@
+i=0;
 function calculateComplexScore(data) {
     let score = 0;
 
